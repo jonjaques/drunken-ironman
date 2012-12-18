@@ -1,0 +1,26 @@
+<snippet>
+  <content><![CDATA[
+define(['knockout', 'underscore'], function(ko, _) {
+
+  var ${1:ViewModel} = function(${2:model}) {
+    var self = this;
+
+
+    this.init(${2:model});
+  };
+
+  _.extend(${1: ViewModel}.prototype, {
+    init: function(${2:model}) {
+
+    }
+  });
+
+  return ${1: ViewModel};
+
+});
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>r.vm</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>
